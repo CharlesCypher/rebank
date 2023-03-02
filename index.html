@@ -48,7 +48,7 @@
                 ><button class="hero-btn btn-secondary"><i class="fa-brands fa-google-play"></i>Play store</button></a
               >
             </div>
-            <img class="ellipse" src="./images/ellipse.png" alt="ellipse" />
+            <img class="ellipse-left" src="./images/ellipse-left.png" alt="ellipse" />
           </div>
           <div class="hero-content-right">
             <div class="blur"></div>
@@ -287,24 +287,25 @@
     <script>
       const h1 = document.querySelector(".hero-content-left h1");
       const p = document.querySelector(".hero-content-left p");
-      //   const heroBtn = document.querySelector("hero-btn-wrapper button");
       let tl = gsap.timeline({ defaults: { ease: "power3.easeOut", duration: 1 } });
       let star = CSSRulePlugin.getRule(".features-card:before");
       tl.to(h1, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);", opacity: 1, y: 0, duration: 0.5 })
         .to(p, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 1, y: 0, duration: 0.7 })
         .from(".hero-btn", { opacity: 0, y: 30, duration: 0.5 })
-        .from(".ellipse", { scale: 0, opacity: 0 }, "-=1")
-        .from(".phone", { opacity: 0 });
+        .from(".phone", { opacity: 0 })
+        .to(".ellipse", { scale: 1, opacity: 1 });
 
       // Feature
       let tlFeature = gsap.timeline({ scrollTrigger: { trigger: ".features-main-container" } });
-      tlFeature.from(".features-card", { y: 100, opacity: 0, duration: 1.5 }).from(".features-card-content", { y: 20, opacity: 0, duration: 0.5 });
+      tlFeature
+        .from(".features-card", { y: 100, opacity: 0, duration: 1.7 })
+        .from(".features-card-content", { y: 20, opacity: 0, duration: 1 }, "-=1");
 
       //   Personalise
       let tlPersonalise = gsap.timeline({ scrollTrigger: { trigger: ".personalise-section" } });
       tlPersonalise
-        .from(".personalise-content-top", { y: 70, opacity: 0, duration: 1.2 })
-        .from(".personalise-content-bottom", { y: 40, opacity: 0, duration: 0.5 });
+        .from(".personalise-content-top", { y: 70, opacity: 0, duration: 1.5 })
+        .from(".personalise-content-bottom", { y: 40, opacity: 0, duration: 1 }, "-=1");
     </script>
   </body>
 </html>
