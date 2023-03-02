@@ -57,6 +57,13 @@ body {
     line-height: 1.5;
 }
 
+@media screen and (max-width: 1360px) {
+    html {
+        display: none;
+        pointer-events: none;
+    }
+}
+
 h1,
 h2,
 h3,
