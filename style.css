@@ -574,8 +574,8 @@ main {
 
 /* CTA Starts Here */
 .cta-section {
-    min-height: 80vh;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 .cta-section .cta {
