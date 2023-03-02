@@ -308,11 +308,11 @@
         .from(".personalise-content-bottom", { y: 40, opacity: 0, duration: 1 }, "-=1");
 
       // FAQ
-      let tlFaq = gsap.timeline({ scrollTrigger: { trigger: ".faq-section" } });
+      let tlFaq = gsap.timeline({ scrollTrigger: { trigger: ".faqs-section", duration: 1 } });
       tlFaq
-        .from(".faqs-title", { y: 20, opacity: 0, duration: 1 })
-        .from(".faqs-desc", { y: 20, opacity: 0, duration: 1 })
-        .from(".faqs-question-container", { y: -50, opacity: 0, duration: 1 });
+        .from(".faqs-title", { y: 20, opacity: 0 })
+        .from(".faqs-desc", { y: 20, opacity: 0 })
+        .from(".faqs-question-container", { y: 50, opacity: 0, duration: 1 }, "-=1");
 
       // CTA
       let tlCta = gsap.timeline({ scrollTrigger: { trigger: ".cta-section" } });
