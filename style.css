@@ -92,13 +92,6 @@ button {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1140px) {
-    .rebank-showcase {
-        max-width: 1280px;
-        margin: 0 auto;
-    }
-}
-
 /* Header Starts Here*/
 .rebank-header {
     width: 100%;
