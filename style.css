@@ -197,7 +197,7 @@ button {
 }
 
 .blur-grey {
-    top: 30%;
+    top: 50%;
     left: 0;
     background: rgba(130, 130, 130, 0.29);
     filter: blur(136px);
