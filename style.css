@@ -344,9 +344,11 @@ main {
 
 .features-main-container .features-tag {
     color: var(--clr-black);
+    /* opacity: 0;
+    transform: translateY(20px); */
 }
 
-.features-main-container .cta-intro-text {
+.features-main-container .features-intro-text {
     color: var(--clr-white);
     font-size: var(--fz-60px);
     font-family: var(--ff-clash);
@@ -354,6 +356,8 @@ main {
     margin-bottom: 2rem;
     line-height: 64px;
     text-transform: uppercase;
+    /* opacity: 0;
+    transform: translateY(20px); */
 }
 
 .features-main-container .features-card-container {
@@ -483,7 +487,7 @@ main {
 }
 
 .personalise-section .personalise-content-bottom img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-right: -5rem;
     object-fit: cover;
