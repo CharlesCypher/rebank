@@ -441,7 +441,6 @@ main {
 .personalise-section {
     position: relative;
     padding-top: 7rem;
-    /* min-height: 70vh; */
 }
 
 .personalise-section .personalise-intro-text {
@@ -471,7 +470,10 @@ main {
 }
 
 .personalise-section .personalise-content-bottom img {
+    width: 100%;
+    height: auto;
     margin-right: -5rem;
+    object-fit: cover;
 }
 
 /* Personalisation Ends Here */
