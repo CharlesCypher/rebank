@@ -440,7 +440,7 @@ main {
 /* Personalisation Starts Here */
 .personalise-section {
     position: relative;
-    padding-top: 5rem;
+    padding-top: 7rem;
     /* min-height: 70vh; */
 }
 
@@ -459,6 +459,7 @@ main {
     margin-bottom: 2rem;
     color: var(--clr-grey-800);
     font-family: var(--ff-supreme);
+    font-size: var(--fz-18px);
     font-weight: var(--fw-400);
 }
 
@@ -477,7 +478,7 @@ main {
 
 /* FAQS Starts Here */
 .faqs-section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .faqs-section .faqs-title {
@@ -511,7 +512,7 @@ main {
     padding: 1.2rem 0;
     border-top: 1px solid var(--clr-black-400);
     border-bottom: 1px solid var(--clr-black-400);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .faqs-question-container .question {
@@ -536,6 +537,7 @@ main {
 
 .faqs-question-container .faq svg {
     transition: transform .1s ease-in-out;
+    cursor: pointer;
 }
 
 .faqs-question-container .answer p {
@@ -736,3 +738,17 @@ main {
 }
 
 /* Footer Ends Here */
+
+
+
+
+
+/* Coriz */
+.corizon {
+    font-size: 12px;
+    text-align: center;
+    color: var(--clr-white);
+    font-family: var(--ff-supreme);
+    font-weight: var(--fw-400);
+    text-decoration: underline;
+}
