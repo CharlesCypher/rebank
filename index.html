@@ -293,7 +293,7 @@
         .to(p, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 1, y: 0, duration: 0.7 })
         .from(".hero-btn", { opacity: 0, y: 30, duration: 0.5 })
         .from(".phone", { opacity: 0 })
-        .to(".ellipse", { scale: 1, opacity: 1 });
+        .to(".ellipse", { scale: 1, opacity: 1 }, "-=1");
 
       // Feature
       let tlFeature = gsap.timeline({ scrollTrigger: { trigger: ".features-main-container" } });
@@ -304,8 +304,19 @@
       //   Personalise
       let tlPersonalise = gsap.timeline({ scrollTrigger: { trigger: ".personalise-section" } });
       tlPersonalise
-        .from(".personalise-content-top", { y: 70, opacity: 0, duration: 1.5 })
+        .from(".personalise-content-top", { y: 70, opacity: 0, duration: 2 })
         .from(".personalise-content-bottom", { y: 40, opacity: 0, duration: 1 }, "-=1");
+
+      // FAQ
+      let tlFaq = gsap.timeline({ scrollTrigger: { trigger: ".faq-section" } });
+      tlFaq
+        .from(".faqs-title", { y: 20, opacity: 0, duration: 1 })
+        .from(".faqs-desc", { y: 20, opacity: 0, duration: 1 })
+        .from(".faqs-question-container", { y: -50, opacity: 0, duration: 1 });
+
+      // CTA
+      let tlCta = gsap.timeline({ scrollTrigger: { trigger: ".cta-section" } });
+      tlCta.from(".cta", { opacity: 0, duration: 1.5 }).from(".cta-title", { y: 40, opacity: 0, duration: 1 }, "-=1");
     </script>
   </body>
 </html>
