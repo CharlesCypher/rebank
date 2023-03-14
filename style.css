@@ -263,6 +263,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
     overflow: hidden;
     margin-bottom: 10rem;
 }
@@ -685,13 +686,28 @@ main {
 }
 
 @media screen and (max-width: 475px) {
+    .personalise-section {
+        overflow: hidden;
+    }
+
+    .personalise-section .personalise-intro-text {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
     .personalise-section .personalise-intro-desc {
         width: 90%;
         font-size: var(--fz-14px);
     }
 
+    .personalise-section .personalise-content-bottom {
+        width: 400px;
+        height: auto;
+    }
+
     .personalise-section .personalise-content-bottom img {
         margin-top: 1rem;
+        width: 100%;
     }
 }
 
