@@ -1098,6 +1098,18 @@ main {
     }
 }
 
+@media screen and (max-width:320px) {
+    .cta-section .cta-title {
+        font-size: var(--fz-20px);
+    }
+
+    .cta-section .cta-desc {
+        font-size: var(--fz-16px);
+    }
+}
+
+
+
 /* CTA Ends Here */
 
 /* Footer Starts Here */
