@@ -12,72 +12,109 @@
     --ff-clash: 'Clash Display', sans-serif;
     --ff-supreme: 'Supreme', sans-serif;
     --ff-IBM: 'IBM Plex Mono', monospace;
-    --fz-14px: 0.875rem;
+    /* --fz-16px: 0.875rem; */
     --fz-16px: 1rem;
     --fz-18px: 1.125rem;
     --fz-20px: 1.25rem;
-    --fz-24px: 5vw;
-    --fz-32px: 3vw;
-    --fz-35px: 3.2vw;
-    --fz-40px: 4vw;
-    --fz-45px: 4.2vw;
-    --fz-60px: 5vw;
-    --fz-120px: 6.5vw;
+    --fz-24px: 1.5rem;
+    --fz-32px: 2rem;
+    --fz-36px: 2.25rem;
+    --fz-40px: 2.5rem;
+    --fz-48px: 3rem;
+    --fz-60px: 2.75rem;
+    --fz-96px: 6rem;
     --fw-400: 400;
     --fw-600: 600;
     --fw-700: 700;
     --fw-900: 900;
 }
 
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
 *,
-::before,
-::after {
-    margin: 0;
-    padding: 0;
+*::before,
+*::after {
     box-sizing: border-box;
-    /* background: rgb(0 100 0 / 0.1) !important; */
 }
 
-html {
-    line-height: 1.5;
-    /* 1 */
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
-    -moz-tab-size: 4;
-    /* 3 */
-    -o-tab-size: 4;
-    tab-size: 4;
-    /* 4 */
-    font-feature-settings: normal;
-    /* 5 */
-    scroll-behavior: smooth;
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
 }
 
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
 body {
-    background: var(--clr-black);
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-    line-height: 1.5;
+    font-size: var(--fz-16px);
+    height: 100%;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-black);
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: inherit;
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
 }
 
 a {
-    color: var(--clr-white);
     text-decoration: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
+    color: var(--clr-white);
+    font-family: var(--ff-supreme);
 }
 
 button {
@@ -246,17 +283,17 @@ button {
 @media screen and (max-width: 475px) {
     .btn-primary {
         padding: .5rem .8rem;
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 
     .btn-secondary {
         padding: .8rem 1rem;
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 
     .btn-tertiary {
         padding: .8rem 1rem;
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 
     .rebank-logo {
@@ -286,7 +323,7 @@ main {
 
 .hero-content-left .intro-text {
     color: var(--clr-white-900);
-    font-size: var(--fz-120px);
+    font-size: var(--fz-96px);
     text-transform: uppercase;
     font-family: var(--ff-clash);
     font-weight: var(--fw-700);
@@ -387,7 +424,7 @@ main {
     }
 
     .hero-content-left .intro-desc {
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 
     .hero-content-right {
@@ -530,7 +567,7 @@ main {
     color: var(--clr-white);
     font-family: var(--ff-clash);
     font-weight: var(--fw-600);
-    font-size: var(--fz-35px);
+    font-size: var(--fz-36px);
     line-height: 50px;
     margin-bottom: 1rem;
 }
@@ -554,7 +591,7 @@ main {
     }
 
     .features-card .feature-card-title {
-        font-size: var(--fz-35px);
+        font-size: var(--fz-36px);
         line-height: 40px;
     }
 
@@ -578,7 +615,7 @@ main {
     }
 
     .features-card .feature-card-title {
-        font-size: var(--fz-45px);
+        font-size: var(--fz-48px);
     }
 
     .features-card .feature-card-desc {
@@ -626,7 +663,7 @@ main {
 
     .features-card .feature-card-desc {
         width: 100%;
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 }
 
@@ -711,7 +748,7 @@ main {
 
     .personalise-section .personalise-intro-desc {
         width: 90%;
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 
     .personalise-section .personalise-content-bottom {
@@ -820,7 +857,7 @@ main {
     }
 
     .faqs-question-container .answer p {
-        font-size: var(--fz-14px);
+        font-size: var(--fz-16px);
     }
 }
 
@@ -996,7 +1033,7 @@ main {
     margin-right: 1.5rem;
     color: var(--clr-white);
     font-family: var(--ff-supreme);
-    font-size: var(--fz-14px);
+    font-size: var(--fz-16px);
     font-weight: var(--fw-400);
 }
 
