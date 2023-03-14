@@ -356,6 +356,13 @@ button {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .btn-secondary {
+        padding: .8rem .9rem;
+        font-size: var(--fz-14px);
+    }
+}
+
 /* Utilities Ends Here */
 
 /* Hero Section || Main Section Starts Here */
@@ -369,8 +376,6 @@ main {
     grid-template-columns: 1fr 1fr;
     place-items: center;
     overflow: hidden;
-    /* padding: 3rem 1.5rem; */
-    /* margin-bottom: 10rem; */
 }
 
 .hero-content-left {
@@ -400,6 +405,12 @@ main {
     opacity: 0;
     transform: translateY(100px);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.hero-content-left .hero-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .hero-content-left .hero-btn {
@@ -492,8 +503,14 @@ main {
 
 @media screen and (max-width: 375px) {
     .hero-content-left .intro-text {
-        font-size: var(--fz-40px);
-        line-height: 64px;
+        font-size: var(--fz-36px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-content-left .intro-text {
+        font-size: var(--fz-34px);
+        line-height: 50px;
     }
 }
 
@@ -741,7 +758,21 @@ main {
 }
 
 @media screen and (max-width: 375px) {
+    .features-section .features-intro {
+        font-size: var(--fz-20px);
+    }
+
     .features-card .feature-card-title {
+        font-size: var(--fz-20px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .features-card .feature-card-title {
+        font-size: var(--fz-18px);
+    }
+
+    .features-main-container .features-intro-text {
         font-size: var(--fz-20px);
     }
 }
@@ -842,6 +873,13 @@ main {
 }
 
 
+@media screen and (max-width:320px) {
+    .personalise-section .personalise-intro-text {
+        font-size: var(--fz-20px);
+    }
+}
+
+
 /* Personalisation Ends Here */
 
 /* FAQS Starts Here */
@@ -856,6 +894,7 @@ main {
     font-family: var(--ff-clash);
     font-size: var(--fz-40px);
     font-weight: var(--fw-700);
+    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
@@ -923,6 +962,10 @@ main {
 }
 
 @media screen and (max-width: 475px) {
+    .faqs-section .faqs-title {
+        font-size: var(--fz-24px);
+    }
+
     .faqs-section .faqs-desc {
         font-size: var(--fz-16px);
     }
@@ -937,6 +980,17 @@ main {
 
     .faqs-question-container .answer p {
         font-size: var(--fz-16px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .faqs-section .faqs-title {
+        font-size: var(--fz-20px);
+    }
+
+    .faqs-section .faqs-desc {
+        padding: 0 1rem;
+        text-align: center;
     }
 }
 
