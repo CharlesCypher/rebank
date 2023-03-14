@@ -12,7 +12,6 @@
     --ff-clash: 'Clash Display', sans-serif;
     --ff-supreme: 'Supreme', sans-serif;
     --ff-IBM: 'IBM Plex Mono', monospace;
-    /* --fz-16px: 0.875rem; */
     --fz-16px: 1rem;
     --fz-18px: 1.125rem;
     --fz-20px: 1.25rem;
@@ -634,10 +633,16 @@ main {
 .features-main-container .features-card::before {
     content: url('./images/star.png');
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 10%;
+    left: 10%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     user-select: none;
     pointer-events: none;
+    animation: rotate 10s infinite linear;
 }
 
 .features-card .feature-card-overlay {
@@ -1344,5 +1349,15 @@ main {
 
     100% {
         left: -100%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
     }
 }

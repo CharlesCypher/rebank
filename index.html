@@ -318,8 +318,6 @@
       let tl = gsap.timeline({ defaults: { ease: "power3.easeOut", duration: 1 } });
       let star = CSSRulePlugin.getRule(".features-card:before");
 
-      gsap.to(star, { cssRule: { backgroundColor: "#600", color: "white" } });
-
       tl.to(h1, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);", opacity: 1, y: 0, duration: 0.5 })
         .to(p, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 1, y: 0, duration: 0.7 })
         .from(".hero-btn", { opacity: 0, y: 30, duration: 0.5 })
