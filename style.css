@@ -490,6 +490,13 @@ main {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .hero-content-left .intro-text {
+        font-size: var(--fz-40px);
+        line-height: 64px;
+    }
+}
+
 /* Hero Section || Main Section Ends Here */
 
 /* Features Section Starts Here */
@@ -583,6 +590,8 @@ main {
 .features-main-container .card-left {
     background-image: url('./images/cardholder.png');
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index: 1;
 
 }
@@ -590,6 +599,8 @@ main {
 .features-main-container .card-right {
     background-image: url('./images/threephones.png');
     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index: 1;
 }
 
