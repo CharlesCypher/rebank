@@ -956,7 +956,7 @@ main {
     border-radius: 13.813rem;
     padding: 3rem 0;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
 }
 
 .cta-section .cta-title {
@@ -994,11 +994,26 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 @media screen and (max-width: 475px) {
     .cta-section .cta {
         border-radius: 1rem;
+    }
+
+    .cta-section .cta-title {
+        font-size: var(--fz-24px);
+        line-height: 30px;
+    }
+
+    .cta-section .cta-desc {
+        width: 80%;
+        font-size: var(--fz-16px);
+    }
+
+    .cta-section .cta button {
+        padding: .625rem 2rem;
     }
 
     .cta-section .cta .hands {
