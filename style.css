@@ -84,7 +84,7 @@ button {
     outline-color: transparent;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
     section {
         padding-inline: 2.5rem;
     }
@@ -102,7 +102,7 @@ button {
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
     .rebank-header {
         padding-inline: 2.5rem;
     }
@@ -224,6 +224,23 @@ button {
     border-bottom: 1px solid var(--clr-white);
 }
 
+@media screen and (max-width: 475px) {
+    .btn-primary {
+        padding: .5rem .8rem;
+        font-size: var(--fz-14px);
+    }
+
+    .btn-secondary {
+        padding: .8rem 1rem;
+        font-size: var(--fz-14px);
+    }
+
+    .btn-tertiary {
+        padding: .8rem 1rem;
+        font-size: var(--fz-14px);
+    }
+}
+
 /* Utilities Ends Here */
 
 /* Hero Section || Main Section Starts Here */
@@ -235,17 +252,12 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
     margin-bottom: 10rem;
 }
 
 .hero-content-left {
     position: relative;
-}
-
-.hero-content-left .ellipse-left {
-    position: absolute;
-    top: 20%;
-    left: -15%;
 }
 
 .hero-content-left .intro-text {
@@ -338,6 +350,25 @@ main {
     }
 }
 
+@media screen and (max-width: 475px) {
+    .hero-section {
+        margin-bottom: 5rem;
+    }
+
+    .hero-content-left .intro-text {
+        font-size: var(--fz-120px);
+        line-height: 40px;
+    }
+
+    .hero-content-left .intro-desc {
+        font-size: var(--fz-14px);
+    }
+
+    .hero-content-right {
+        display: none;
+    }
+}
+
 /* Hero Section || Main Section Ends Here */
 
 /* Features Section Starts Here */
@@ -356,6 +387,7 @@ main {
     font-family: var(--ff-clash);
     font-size: var(--fz-24px);
     font-weight: var(--fw-700);
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -486,8 +518,6 @@ main {
     margin-bottom: 2rem;
 }
 
-
-
 @media screen and (max-width: 1024px) {
     .features-section {
         padding: .1rem 2rem;
@@ -527,6 +557,49 @@ main {
 
     .features-card .feature-card-desc {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .features-section {
+        padding: .1rem 1rem;
+    }
+
+    .features-section .companies-logo {
+        height: 50px;
+    }
+
+    .features-section .companies-logo span {
+        width: auto;
+        margin: auto .5rem;
+    }
+
+    .features-section .features-main-container {
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .features-main-container .features-card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .features-main-container .features-card {
+        height: 480px;
+        padding: 1.5rem;
+    }
+
+    .features-card .feature-card-title {
+        font-size: var(--fz-60px);
+        line-height: 30px;
+    }
+
+    .features-main-container .features-intro-text {
+        line-height: 30px;
+    }
+
+    .features-card .feature-card-desc {
+        width: 100%;
+        font-size: var(--fz-14px);
     }
 }
 
@@ -599,6 +672,17 @@ main {
     }
 }
 
+@media screen and (max-width: 475px) {
+    .personalise-section .personalise-intro-desc {
+        width: 90%;
+        font-size: var(--fz-14px);
+    }
+
+    .personalise-section .personalise-content-bottom img {
+        margin-top: 1rem;
+    }
+}
+
 
 /* Personalisation Ends Here */
 
@@ -628,7 +712,7 @@ main {
 }
 
 .faqs-question-container {
-    max-width: 700px;
+    width: min(700px, 90%);
     margin: 0 auto;
 }
 
@@ -636,7 +720,6 @@ main {
     width: 100%;
     margin-top: 2rem;
     padding: 1.2rem 0;
-    /* border-top: 1px solid var(--clr-black-400); */
     border-bottom: 1px solid var(--clr-black-400);
 }
 
@@ -889,6 +972,18 @@ main {
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .footer-section-wrapper .footer-section-left {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* place-items: center; */
+    }
+
+    .footer-section-right {
+        width: 100%;
     }
 }
 
