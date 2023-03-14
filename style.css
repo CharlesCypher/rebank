@@ -605,6 +605,7 @@ main {
     }
 
     .features-main-container .features-intro-text {
+        font-size: 1.5rem;
         line-height: 30px;
     }
 
@@ -966,7 +967,7 @@ main {
     .footer-section .footer-section-wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     .footer-section-right {
@@ -990,11 +991,22 @@ main {
     .footer-section-wrapper .footer-section-left {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
         justify-items: center;
     }
 
     .footer-section-right {
         width: 100%;
+    }
+
+    .footer-section .newsletter-form-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-section .newsletter-form-container button {
+        padding: .8rem 4rem;
+        margin-top: 1rem;
     }
 }
 
