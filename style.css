@@ -142,6 +142,8 @@ button {
     .rebank-nav {
         display: flex;
         flex-direction: row-reverse !important;
+        align-items: center;
+        justify-content: space-between;
         margin-bottom: 1rem;
     }
 
@@ -255,6 +257,10 @@ button {
     .btn-tertiary {
         padding: .8rem 1rem;
         font-size: var(--fz-14px);
+    }
+
+    .rebank-logo {
+        font-size: 1.4rem;
     }
 }
 
