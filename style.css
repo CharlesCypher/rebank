@@ -740,6 +740,12 @@ main {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .features-card .feature-card-title {
+        font-size: var(--fz-20px);
+    }
+}
+
 /* Features  Section Ends Here*/
 
 /* Personalisation Starts Here */
