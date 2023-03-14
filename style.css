@@ -12,6 +12,7 @@
     --ff-clash: 'Clash Display', sans-serif;
     --ff-supreme: 'Supreme', sans-serif;
     --ff-IBM: 'IBM Plex Mono', monospace;
+    --fz-14px: 0.875rem;
     --fz-16px: 1rem;
     --fz-18px: 1.125rem;
     --fz-20px: 1.25rem;
@@ -358,6 +359,20 @@ button {
 @media screen and (max-width: 375px) {
     .btn-secondary {
         padding: .8rem .9rem;
+        font-size: var(--fz-16px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .btn-primary {
+        font-size: var(--fz-14px);
+    }
+
+    .btn-secondary {
+        font-size: var(--fz-14px);
+    }
+
+    .btn-tertiary {
         font-size: var(--fz-14px);
     }
 }
@@ -780,6 +795,10 @@ main {
 
     .features-main-container .features-intro-text {
         font-size: var(--fz-20px);
+    }
+
+    .features-main-container .features-card::before {
+        left: 15%;
     }
 }
 
