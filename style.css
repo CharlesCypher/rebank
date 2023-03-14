@@ -140,7 +140,13 @@ button {
 
 @media screen and (max-width: 475px) {
     .rebank-nav {
+        display: flex;
+        flex-direction: row-reverse !important;
         margin-bottom: 1rem;
+    }
+
+    .rebank-nav .header-btn {
+        display: none;
     }
 }
 
