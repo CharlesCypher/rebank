@@ -1173,6 +1173,10 @@ main {
         justify-content: start;
     }
 
+    .footer-section .newsletter-form-container input[type="email"] {
+        margin-right: 0;
+    }
+
     .footer-section .newsletter-form-container button {
         padding: .8rem 4rem;
         margin-top: 1rem;
@@ -1182,9 +1186,22 @@ main {
         margin: 0;
     }
 
+    .footer-section .footer-section-wrapper {
+        padding-bottom: 3rem;
+    }
+
     .footer-section .footer-social-section {
-        /* justify-content: start; */
         display: inline-table;
+    }
+
+    .footer-social-section .social-icons {
+        display: flex;
+        justify-content: start;
+        margin-top: 1rem;
+    }
+
+    .footer-social-section .social-icons .fa-facebook-f {
+        margin: 0;
     }
 
     .footer-social-section .license-links {
