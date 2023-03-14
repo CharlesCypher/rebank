@@ -504,6 +504,7 @@ main {
 @media screen and (max-width: 375px) {
     .hero-content-left .intro-text {
         font-size: var(--fz-36px);
+        line-height: 55px;
     }
 }
 
