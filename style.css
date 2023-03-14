@@ -1183,7 +1183,8 @@ main {
     }
 
     .footer-section .footer-social-section {
-        justify-content: start;
+        /* justify-content: start; */
+        display: inline-table;
     }
 
     .footer-social-section .license-links {
