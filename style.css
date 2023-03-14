@@ -792,6 +792,24 @@ main {
     transform: rotate(180deg);
 }
 
+@media screen and (max-width: 475px) {
+    .faqs-section .faqs-desc {
+        font-size: var(--fz-16px);
+    }
+
+    .faqs-question-container .faq {
+        padding: 1rem 0;
+    }
+
+    .faqs-question-container .question h3 {
+        font-size: var(--fz-16px);
+    }
+
+    .faqs-question-container .answer p {
+        font-size: var(--fz-14px);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1012,18 +1030,21 @@ main {
     }
 
     .footer-section-right {
+        text-align: left;
         width: 100%;
     }
 
     .footer-section .newsletter-form-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: start;
     }
 
     .footer-section .newsletter-form-container button {
         padding: .8rem 4rem;
         margin-top: 1rem;
     }
+
 }
 
 /* Footer Ends Here */
