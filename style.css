@@ -1008,8 +1008,8 @@ main {
     }
 
     .cta-section .cta-desc {
-        width: 80%;
-        font-size: var(--fz-16px);
+        width: 95%;
+        font-size: var(--fz-18px);
     }
 
     .cta-section .cta button {
