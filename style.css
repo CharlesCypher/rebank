@@ -1177,9 +1177,20 @@ main {
         margin-right: 0;
     }
 
-    .footer-section .newsletter-form-container button {
-        padding: .8rem 4rem;
+    .footer-section .newsletter-button-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .footer-section .newsletter-form-container a {
+        width: 100%;
         margin-top: 1rem;
+    }
+
+    .footer-section .newsletter-form-container button {
+        width: 100%;
     }
 
     .footer-social-section {
