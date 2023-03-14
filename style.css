@@ -144,7 +144,7 @@ button {
         flex-direction: row-reverse !important;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .rebank-nav .header-btn {
@@ -376,6 +376,7 @@ main {
 
 @media screen and (max-width: 475px) {
     .hero-section {
+        min-height: 50vh;
         margin-bottom: 5rem;
     }
 
