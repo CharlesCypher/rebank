@@ -740,7 +740,7 @@ main {
 }
 
 .faqs-question-container {
-    width: min(700px, 90%);
+    width: min(700px, 80%);
     margin: 0 auto;
 }
 
