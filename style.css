@@ -207,7 +207,7 @@ button {
 }
 
 .btn-secondary {
-    padding: 1rem 1.5rem;
+    padding: .7rem 1rem;
     background: none;
     background-color: var(--clr-grey);
     border-radius: var(--step-2);
