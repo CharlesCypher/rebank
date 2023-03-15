@@ -25,6 +25,9 @@
 
     /* Step 7: 57.33px → 95.37px */
     --step-7: clamp(3.58rem, calc(2.90rem + 3.40vw), 5.96rem);
+    /* Page padding */
+    --page-padding-x: calc((100vw - min(85vw, 75ch)) / 2);
+
     --clr-black: #000000;
     --clr-black-400: #2A2828;
     --clr-black-500: #3C3C3C;
@@ -124,9 +127,12 @@ button {
     outline-color: transparent;
 }
 
+
+
 @media screen and (max-width: 1400px) {
     section {
-        padding-inline: 1.5rem;
+        padding-right: var(--page-padding-x);
+        padding-left: var(--page-padding-x);
     }
 }
 
@@ -152,7 +158,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: clamp(1rem, 5vw, 1.5rem);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: var(--page-padding-x);
+    padding-left: var(--page-padding-x);
 }
 
 .rebank-header .rebank-menu {
@@ -339,6 +348,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     overflow: hidden;
 }
 
@@ -362,7 +373,7 @@ main {
 .hero-content-left .intro-desc {
     color: var(--clr-white);
     font-family: var(--ff-supreme);
-    font-size: var(--step-0);
+    /* font-size: var(--step-0); */
     margin-bottom: 2.5rem;
     font-weight: var(--fw-400);
     width: 60%;
@@ -377,8 +388,11 @@ main {
     justify-content: start;
 }
 
-.hero-content-left .hero-btn {
+.hero-content-left .hero-btn-wrapper a:first-child {
     margin-right: 1rem;
+}
+
+.hero-content-left .hero-btn {
     opacity: 1;
     transform: translateY(0);
 }
@@ -404,14 +418,16 @@ main {
 @media screen and (max-width:1024px) {
     .hero-section {
         /* padding: 3rem 2rem 6rem 2rem; */
-        padding-inline: min(1.5rem, 95%);
-        padding-block: min(3rem, 10vw);
-        margin: 0 auto;
+        /* padding-left: min(1.5rem, 95%);
+        padding-right: min(1.5rem, 95%);
+        padding-top: min(.5rem, 10vw);
+        padding-bottom: min(10rem, 10vw); */
+        /* margin: 0 auto; */
     }
 
     .hero-content-left .intro-text {
         /* font-size: var(--fz-60px); */
-        line-height: 80px;
+        /* line-height: 80px; */
     }
 
     .hero-content-left .intro-desc {
@@ -461,6 +477,7 @@ main {
         display: grid;
         grid-template-columns: 1fr;
         align-content: start;
+        padding-top: 3rem;
         /* padding: 4rem 1.5rem 6rem 1.5rem; */
         /* margin-bottom: 0rem; */
     }
@@ -758,6 +775,7 @@ main {
 @media screen and (max-width: 320px) {
     .features-card .feature-card-title {
         /* font-size: var(--fz-18px); */
+        font-size: var(--step-1);
     }
 
     .features-main-container .features-intro-text {
