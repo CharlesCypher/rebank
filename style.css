@@ -400,6 +400,7 @@ main {
 
     .hero-content-left .intro-text {
         font-size: var(--step-5);
+        line-height: 130%;
     }
 
     .hero-content-left .intro-desc {
