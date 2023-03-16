@@ -311,7 +311,7 @@
       tl.to(h1, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);", opacity: 1, y: 0, duration: 0.5 })
         .to(p, { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 1, y: 0, duration: 0.7 })
         .from(".hero-btn", { opacity: 0, y: 30, duration: 0.5 })
-        .from(".phone", { opacity: 0 })
+        .from(".hero-content-right", { opacity: 0 })
         .to(".ellipse", { scale: 1, opacity: 1 }, "-=1");
       // Feature
       let tlFeature = gsap.timeline({ scrollTrigger: { trigger: ".features-main-container" } });
