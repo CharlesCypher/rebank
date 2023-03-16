@@ -346,7 +346,7 @@ main {
 @media screen and (max-width: 1440px) {
     .hero-content-right {
         width: 100%;
-        height: 60vh;
+        height: 90vh;
         margin-left: -7rem;
     }
 }
