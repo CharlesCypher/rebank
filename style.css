@@ -870,7 +870,7 @@ main {
     margin-bottom: 1rem;
     color: var(--clr-white);
     font-family: var(--ff-clash);
-    font-size: var(--step-2);
+    font-size: var(--step-3);
     font-weight: var(--fw-700);
     text-transform: uppercase;
     line-height: 65px;
@@ -906,7 +906,7 @@ main {
 
 @media screen and (max-width: 1024px) {
     .cta-section .cta-title {
-        font-size: var(--step-3);
+        font-size: var(--step-2);
     }
 }
 
