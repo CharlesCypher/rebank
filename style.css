@@ -263,18 +263,13 @@ button {
 
 .blur {
     position: absolute;
-    height: 500px;
-    width: 500px;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    width: 400px;
     background: rgba(130, 130, 130, 0.29);
     filter: blur(136px);
     z-index: -3;
-}
-
-.blur-grey {
-    top: 50%;
-    left: 0;
-    background: rgba(130, 130, 130, 0.29);
-    filter: blur(136px);
 }
 
 .blur-orange {
@@ -297,12 +292,14 @@ main {
 
 .hero-section {
     width: 100%;
+    /* background: rgb(0, 0, 0); */
+    /* background: linear-gradient(165deg, rgba(0, 0, 0, 1) 68%, rgba(64, 64, 64, 1) 92%); */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    /* place-items: center; */
     padding-top: 2rem;
     padding-bottom: 5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero-content-left .intro-text {
@@ -352,15 +349,14 @@ main {
 }
 
 .hero-content-right {
-    width: 100%;
-    height: 115%;
+    width: 200%;
+    height: 90vh;
     position: relative;
     background-image: url("./images/deviceorange.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    margin-left: clamp(-20rem, calc(-30rem + 5vw), -25rem);
-    margin-top: 10rem;
+    margin-left: clamp(-18rem, calc(-20rem + 5vw), -25rem);
     z-index: -1;
 }
 
@@ -374,8 +370,18 @@ main {
 }
 
 @media screen and (max-width:1024px) {
+    .hero-content-left .intro-text {
+        font-size: var(--step-7);
+    }
+
     .hero-content-left .intro-desc {
         width: 60%;
+    }
+
+    .hero-content-right {
+        width: 160%;
+        height: 60vh;
+        margin-left: -7rem;
     }
 }
 
@@ -383,10 +389,22 @@ main {
     .hero-section {
         display: grid;
         grid-template-columns: 1fr;
+        overflow: hidden;
     }
 
     .hero-content-left .intro-text {
         font-size: var(--step-6);
+    }
+
+    .hero-content-left .intro-desc {
+        width: 80%;
+    }
+
+    .hero-content-right {
+        /* overflow: hidden; */
+        /* display: none; */
+        /* width: 0; */
+        height: auto;
     }
 }
 
@@ -420,7 +438,7 @@ main {
 
 @media screen and (max-width: 320px) {
     .hero-content-left .intro-text {
-        font-size: var(--step-4);
+        /* font-size: var(--step-4); */
         line-height: 50px;
     }
 }
@@ -570,13 +588,13 @@ main {
     color: var(--clr-white);
     font-family: var(--ff-clash);
     font-weight: var(--fw-600);
-    font-size: var(--step-2);
+    font-size: var(--step-3);
     line-height: 50px;
     margin-bottom: 1rem;
 }
 
 .features-card .feature-card-desc {
-    width: 80%;
+    width: 90%;
     color: var(--clr-grey-800);
     font-family: var(--ff-supreme);
     font-weight: var(--fw-400);
@@ -687,7 +705,7 @@ main {
     font-size: var(--step-2);
     font-weight: var(--fw-700);
     text-transform: uppercase;
-    line-height: 100px;
+    line-height: 80px;
 }
 
 .personalise-section .personalise-intro-desc {
@@ -871,7 +889,7 @@ main {
     text-align: center;
     position: relative;
     background-color: var(--clr-orange);
-    border-radius: 13.813rem;
+    border-radius: 13rem;
     padding: 3rem 0;
     overflow: hidden;
     z-index: 1;
@@ -884,7 +902,7 @@ main {
     font-size: var(--step-2);
     font-weight: var(--fw-700);
     text-transform: uppercase;
-    line-height: 47px;
+    line-height: 65px;
 }
 
 .cta-section .cta-desc {
@@ -1049,7 +1067,7 @@ main {
     margin-right: 1.5rem;
     color: var(--clr-white);
     font-family: var(--ff-supreme);
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     font-weight: var(--fw-400);
 }
 
