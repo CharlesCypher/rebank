@@ -341,8 +341,8 @@ main {
 
 @media screen and (max-width: 1440px) {
     .hero-content-right {
-        width: 150%;
-        height: clamp(90vh, 50%, 80vh);
+        width: auto;
+        height: 80vh;
         margin-left: -7.5rem;
     }
 }
