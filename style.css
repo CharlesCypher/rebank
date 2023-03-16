@@ -41,7 +41,6 @@
 html {
     height: 100%;
     font-size: var(--step-0);
-
 }
 
 
@@ -49,7 +48,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: var(--clr-black);
-
 }
 
 img,
@@ -94,7 +92,7 @@ button {
 }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1439px) {
     section {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -136,7 +134,7 @@ button {
     background-color: var(--clr-white);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1439px) {
     .rebank-nav {
         padding-right: 2.5rem;
         padding-left: 2.5rem;
@@ -316,8 +314,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200%;
-    height: 90vh;
     position: relative;
     background-image: url("./images/deviceorange.png");
     background-repeat: no-repeat;
@@ -345,9 +341,9 @@ main {
 
 @media screen and (max-width: 1440px) {
     .hero-content-right {
-        width: 100%;
-        height: 60vh;
-        margin-left: -7rem;
+        width: 150%;
+        height: clamp(90vh, 50%, 80vh);
+        margin-left: -7.5rem;
     }
 }
 
@@ -361,8 +357,8 @@ main {
     }
 
     .hero-content-right {
-        width: 100%;
-        height: 65vh;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -382,7 +378,6 @@ main {
     }
 
     .hero-content-right {
-
         height: auto;
     }
 
