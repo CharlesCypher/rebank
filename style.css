@@ -315,7 +315,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url("./images/deviceorange.png");
+    background-image: url("https://res.cloudinary.com/cyher/image/upload/v1690712186/deviceorange_bmjtlu.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -511,7 +511,7 @@ main {
 }
 
 .features-main-container .card-left {
-    background-image: url('./images/cardholder.png');
+    background-image: url('https://res.cloudinary.com/cyher/image/upload/v1690712480/cardholder_grhvts.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -520,7 +520,7 @@ main {
 }
 
 .features-main-container .card-right {
-    background-image: url('./images/threephones.png');
+    background-image: url('https://res.cloudinary.com/cyher/image/upload/v1690712476/threephones_ppv8ce.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1015,7 +1015,7 @@ main {
 
 .footer-section .newsletter-form-container input[type="email"] {
     width: 100%;
-    padding: 1rem;
+    padding: .8rem;
     font-size: var(--step-0);
     font-family: var(--ff-supreme);
     border: none;
